@@ -23,7 +23,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0 rgba(158, 63, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+    <string notr="true">QWidget#widget{
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0 rgba(158, 63, 0, 255), stop:1 rgba(255, 255, 255, 255))}</string>
    </property>
    <widget class="QPushButton" name="But1">
     <property name="geometry">
@@ -49,6 +50,9 @@
       <width>311</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>TextLabel</string>
