@@ -3,15 +3,8 @@ from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QComboBox, QLabel
 
-'''item=""
-item2=""
-item3=""
-item4=""
-item5=""
-item6=""'''
-
 class InputScreen(QDialog):
-    global item, item2, item3, item4, item5, item6
+    
     def __init__(self):
         super(InputScreen,self).__init__() 
         loadUi("input.ui", self)
@@ -34,6 +27,7 @@ class InputScreen(QDialog):
     
 
     def submit(self):
+        global item, item2, item3, item4, item5, item6
         print("func 2")
         item = self.combo.currentText()
         item2 = self.combo2.currentText()
@@ -54,17 +48,18 @@ class InputScreen(QDialog):
         #self.label.setText(item)
         
 class Output(QDialog):
-    global item, item2, item3, item4, item5, item6
     def __init__(self):
         super(Output, self).__init__()
+        loadUi("output.ui",self)
         print(item)
         print(item2)
         print(item3)
         print(item4)
         print(item5)
         print(item6)
-        loadUi("output.ui",self)
-    
+        self.label = self.findChild(QLabel, "label")
+        t=item+item2+item3+item4+item5+item6
+        self.label.setText(t)
 
 
         
