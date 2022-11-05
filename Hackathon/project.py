@@ -2,6 +2,10 @@ import sys
 from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QComboBox, QLabel
+import sqlite3
+
+conn = sqlite3.connect("menu6.db")
+c = conn.cursor()
 
 class InputScreen(QDialog):
     
@@ -15,7 +19,6 @@ class InputScreen(QDialog):
         self.combo4 = self.findChild(QComboBox, "comboBox4")
         self.combo5 = self.findChild(QComboBox, "comboBox5")
         self.combo6 = self.findChild(QComboBox, "comboBox6")
-        self.label = self.findChild(QLabel, "label")
 
         #self.combo.currentTextChanged.connect(self.submit)
         self.But1.clicked.connect(self.submit)
@@ -35,13 +38,6 @@ class InputScreen(QDialog):
         item4 = self.combo4.currentText()
         item5 = self.combo5.currentText()
         item6 = self.combo6.currentText()
-        #print(item)
-        '''print(item)
-        print(item2)
-        print(item3)
-        print(item4)
-        print(item5)
-        print(item6)'''
         login = Output()
         widget.addWidget(login)
         widget.setCurrentIndex(widget.currentIndex()+1)
@@ -51,8 +47,8 @@ class Output(QDialog):
     def __init__(self):
         super(Output, self).__init__()
         loadUi("output.ui",self)
-        print(item)
-        print(item2)
+        print(type(item))
+        print(type(int(item2)))
         print(item3)
         print(item4)
         print(item5)
