@@ -57,12 +57,17 @@
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>320</y>
+      <x>80</x>
+      <y>140</y>
       <width>159</width>
       <height>20</height>
      </rect>
     </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
     <item>
      <property name="text">
       <string>Hot</string>
@@ -71,6 +76,156 @@
     <item>
      <property name="text">
       <string>Cold</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox3">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>130</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>no</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>yes</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox4">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>130</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>no</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>yes</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox5">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>130</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>no</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>yes</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>130</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox6">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>130</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Foam</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chocolate Syrup</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Whipped Cream</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vanilla Icecream</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ice Flavouring Syrup</string>
      </property>
     </item>
    </widget>
