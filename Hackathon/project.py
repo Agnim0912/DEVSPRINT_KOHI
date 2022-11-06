@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QCom
 from PyQt5.QtGui import QIcon
 import sqlite3
 
-
+r=6
 
 class InputScreen(QDialog):
     def __init__(self):
