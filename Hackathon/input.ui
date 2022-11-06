@@ -68,6 +68,21 @@ background-color: rgb(244, 174, 74);</string>
       <string>Cold</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>Steaming</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Warm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Scalding</string>
+     </property>
+    </item>
    </widget>
    <widget class="QComboBox" name="comboBox3">
     <property name="geometry">
@@ -250,7 +265,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>EXPRESSO:</string>
+     <string>ESPRESSO:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
