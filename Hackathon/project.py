@@ -2,13 +2,12 @@ import sys
 from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QComboBox, QLabel
+from PyQt5.QtGui import QIcon
 import sqlite3
 
-conn = sqlite3.connect("menu6.db")
-c = conn.cursor()
+
 
 class InputScreen(QDialog):
-    
     def __init__(self):
         super(InputScreen,self).__init__() 
         loadUi("input.ui", self)
@@ -22,12 +21,6 @@ class InputScreen(QDialog):
 
         #self.combo.currentTextChanged.connect(self.submit)
         self.But1.clicked.connect(self.submit)
-
-    #def submit(self):
-        #login = Output()
-        #widget.addWidget(login)
-        #widget.setCurrentIndex(widget.currentIndex()+1)
-    
 
     def submit(self):
         global item, item2, item3, item4, item5, item6
@@ -45,17 +38,37 @@ class InputScreen(QDialog):
         
 class Output(QDialog):
     def __init__(self):
+        conn = sqlite3.connect("data.db")
+        c = conn.cursor()
         super(Output, self).__init__()
         loadUi("output.ui",self)
         print(type(item))
-        print(type(int(item2)))
+        #print(type(int(item2)))
         print(item3)
         print(item4)
         print(item5)
         print(item6)
+        t=''
+        c.execute('''SELECT Recipe from coffee 
+                    WHERE Temperature="{}" AND Expresso="{}" AND Coffee="{}" AND Milk="{}" AND water="{}" AND Extra="{}"'''.format(item, item2, item3, item4, item5, item6))
+        conn.commit()
+        a = c.fetchall()
         self.label = self.findChild(QLabel, "label")
-        t=item+item2+item3+item4+item5+item6
-        self.label.setText(t)
+        if(a==[]):
+            self.label.setText('No Recipes Found')
+        else:
+            for u in a:
+                for j in u:
+                    t=j+''
+            self.label.setText(t)
+        conn.close()
+        #t=item+item2+item3+item4+item5+item6
+        self.But2.clicked.connect(self.submit)
+    
+    def submit(submit):
+        login = InputScreen()
+        widget.addWidget(login)
+        widget.setCurrentIndex(widget.currentIndex()+1)
 
 
         
@@ -65,6 +78,8 @@ app = QApplication(sys.argv)
 welcome = InputScreen()
 widget = QStackedWidget()
 widget.addWidget(welcome)
+widget.setWindowTitle("Kohi")
+widget.setWindowIcon(QIcon("k.png"))
 widget.setFixedHeight(800)
 widget.setFixedWidth(1100)
 widget.show()

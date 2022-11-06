@@ -24,31 +24,33 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget#widget{
-background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0 rgba(158, 63, 0, 255), stop:1 rgba(255, 255, 255, 255))}</string>
+background-color: rgb(173, 80, 21);}
+</string>
    </property>
    <widget class="QPushButton" name="But1">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>420</y>
+      <x>460</x>
+      <y>670</y>
       <width>171</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 255);</string>
+     <string notr="true">border-radius:20px;
+background-color: rgb(244, 174, 74);</string>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Submit</string>
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>140</y>
-      <width>159</width>
-      <height>20</height>
+      <x>120</x>
+      <y>430</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <item>
@@ -70,10 +72,10 @@ background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0
    <widget class="QComboBox" name="comboBox3">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>130</y>
-      <width>73</width>
-      <height>22</height>
+      <x>800</x>
+      <y>430</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <item>
@@ -83,22 +85,22 @@ background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0
     </item>
     <item>
      <property name="text">
-      <string>no</string>
+      <string>No</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>yes</string>
+      <string>Yes</string>
      </property>
     </item>
    </widget>
    <widget class="QComboBox" name="comboBox4">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>130</y>
-      <width>73</width>
-      <height>22</height>
+      <x>120</x>
+      <y>540</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <item>
@@ -108,22 +110,22 @@ background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0
     </item>
     <item>
      <property name="text">
-      <string>no</string>
+      <string>No</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>yes</string>
+      <string>Yes</string>
      </property>
     </item>
    </widget>
    <widget class="QComboBox" name="comboBox5">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>130</y>
-      <width>73</width>
-      <height>22</height>
+      <x>480</x>
+      <y>550</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <item>
@@ -133,22 +135,22 @@ background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0
     </item>
     <item>
      <property name="text">
-      <string>no</string>
+      <string>No</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>yes</string>
+      <string>Yes</string>
      </property>
     </item>
    </widget>
    <widget class="QComboBox" name="comboBox2">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>130</y>
-      <width>73</width>
-      <height>22</height>
+      <x>480</x>
+      <y>430</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <item>
@@ -175,9 +177,9 @@ background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0
    <widget class="QComboBox" name="comboBox6">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>130</y>
-      <width>161</width>
+      <x>800</x>
+      <y>550</y>
+      <width>131</width>
       <height>31</height>
      </rect>
     </property>
@@ -216,6 +218,125 @@ background:qlineargradient(spread:pad, x1:0, y1:0, x2:0.985075, y2:0.983, stop:0
       <string>Ice Flavouring Syrup</string>
      </property>
     </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>350</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>TEMPERATURE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>360</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>EXPRESSO:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>360</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>COFFEE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>470</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>MILK:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>480</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>WATER:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>490</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>EXTRA:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>190</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 40pt &quot;Oleo Script&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>KOHI</string>
+    </property>
    </widget>
   </widget>
  </widget>

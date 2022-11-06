@@ -24,22 +24,41 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget#widget{
-background-color: rgb(244, 255, 114);}</string>
+background-color: rgb(173, 80, 21);}
+</string>
    </property>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>290</y>
+      <x>410</x>
+      <y>260</y>
       <width>411</width>
       <height>181</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 26pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 30pt &quot;Montserrat&quot;;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="But2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>570</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color: rgb(244, 174, 74);</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
     </property>
    </widget>
   </widget>
